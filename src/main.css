@@ -90,7 +90,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  background-color: #917697;
+  background-color: #917697 !important;
   cursor: pointer;
   transition: border-color 0.25s;
   font-family: "Krub", sans-serif;
@@ -98,7 +98,7 @@ button {
 }
 
 button:hover {
-  background-color: #de587d;
+  background-color: #de587d !important;
 }
 
 button:focus,

@@ -2,6 +2,10 @@
   .form {
     margin: 20px;
   }
+
+  .contactTitle {
+    font-weight: 800;
+  }
   
   .form input {
     display: block;

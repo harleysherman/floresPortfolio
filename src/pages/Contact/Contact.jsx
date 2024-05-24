@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../main.css";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
@@ -40,7 +41,7 @@ function Contact() {
     }
     if (!checkName(name)) {
       setErrorMessage(
-        `Please enter a name with a range of 2 to 50 characters.`
+        `Please enter a name with a range of 2 to 100 characters.`
       );
       return;
     }
@@ -70,7 +71,7 @@ function Contact() {
 
   return (
     <div className="container text-center">
-      <h2 className="m-2">Contact</h2>
+      <h2 className="contactTitle m-3">Contact</h2>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
           value={email}

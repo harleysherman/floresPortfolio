@@ -18,6 +18,7 @@ import { QUERY_SINGLE_POST } from "../utils/queries";
 //   );
 // }
 
+
 const SinglePost = () => {
   const { postId } = useParams();
 
@@ -32,7 +33,7 @@ const SinglePost = () => {
   }
   return (
     <div className="m-4">
-      <h2>{post.title}</h2>
+      <h2>{post.titlePost}</h2>
       <h5>{post.dateCreated}</h5>
       <p>{post.paragraph}</p>
     </div>
