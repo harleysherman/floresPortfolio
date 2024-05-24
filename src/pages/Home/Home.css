@@ -1,0 +1,24 @@
+.h1 {
+  font-size: 7em;
+}
+
+.designPortfolio {
+  font-size: 1.2em !important;
+  letter-spacing: 0.25em;
+}
+
+.devPortfolio {
+  font-size: 1.2em !important;
+  letter-spacing: 0.25em;
+}
+
+.imageHome {
+  width: 100%;
+  height: 100%;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}

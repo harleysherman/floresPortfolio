@@ -1,0 +1,37 @@
+.resume {
+    margin: 0.45em;
+}
+
+.skills {
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #917697;
+    text-align: left;
+    margin: 0;
+}
+
+
+h2 {
+    color: #376d3c;
+    margin: 0;
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+.link {
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #917697;
+    text-align: left !important;
+    margin-left: 1em;
+}
+
+#root {
+    text-align: left;
+}
+

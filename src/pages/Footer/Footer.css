@@ -1,0 +1,23 @@
+.footer {
+    margin-top: auto;
+}
+
+.fa-linkedin {
+    margin-top: 0.5em;
+    font-size: 50px;
+}
+.fa-github {
+    margin-top: 0.5em;
+    font-size: 50px;
+}
+
+.copyright {
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
+    color: #376d3c;
+}
+
+.footerIcon {
+    height: 30%;
+    margin-left: 11em !important;
+}

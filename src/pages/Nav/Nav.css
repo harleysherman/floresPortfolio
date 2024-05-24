@@ -1,0 +1,24 @@
+.nav-link-custom {
+  color: #376d3c !important;
+  letter-spacing: 0.25em;
+}
+
+.dropdown-item, .a {
+  --bs-nav-link-color: #de857d !important;
+  --bs-nav-link-hover-color: #61abae !important;
+  letter-spacing: 0.25em;
+  background-color: #ffffff;
+  --bs-dropdown-link-active-bg: #917697 !important;
+}
+
+a {
+  font-size: larger;
+  font-weight: 500;
+  color: #376d3c;
+  text-decoration: inherit;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  color: #de587d;
+}

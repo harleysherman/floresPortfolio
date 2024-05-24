@@ -1,0 +1,207 @@
+html, body, #root {
+  /* height: 100vh; */
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  /* OVERALL STYLES FOR ENTIRE APP */
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-size: larger;
+  font-weight: 500;
+  color: #376d3c;
+  text-decoration: inherit;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  color: #de587d;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* background-color: #cddcce; */
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #376d3c;
+  letter-spacing: 0.10em;
+}
+
+h2 {
+  font-family: "Krub", sans-serif;
+  font-weight: 800;
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #376d3c;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #61abae;
+  letter-spacing: 2px;
+}
+
+ul li {
+  font-size: 1em !important;
+  font-family: "Krub", sans-serif;
+  font-weight: 500 !important;
+  color: #61abae;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin-top: 1em;;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #917697;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #de587d;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #ECCA42;
+}
+
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+/* Global Styles */
+/* Adding barlow font and their weights */
+.krub-extralight {
+  font-family: "Krub", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.krub-light {
+  font-family: "Krub", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.krub-regular {
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.krub-medium {
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.krub-semibold {
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.krub-bold {
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.krub-extralight-italic {
+  font-family: "Krub", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.krub-light-italic {
+  font-family: "Krub", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.krub-regular-italic {
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.krub-medium-italic {
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.krub-semibold-italic {
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.krub-bold-italic {
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.krub-bold {
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}

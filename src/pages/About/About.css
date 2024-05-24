@@ -1,0 +1,16 @@
+.imageDev {
+    width: 30% !important;
+    height: 30% !important;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #1A402A !important;
+    text-align: left;
+  }
+
+  p{
+    text-align: left;
+  }

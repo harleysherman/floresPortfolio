@@ -1,0 +1,23 @@
+  /* styling for forms */
+  .form {
+    margin: 20px;
+  }
+  
+  .form input {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    background-color: #ecca42;
+    color: #1A402A !important;
+    margin-bottom: 1.25em;
+    border-width: 0;
+    padding: 0.5em;
+    font-family: "Krub", sans-serif;
+    font-weight: 300;
+  }
+
+  .nav-link-custom {
+    color: #1A402A !important;
+}
+
+  
