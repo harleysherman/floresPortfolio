@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import "../../main.css";
 import "./Nav.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -45,12 +47,13 @@ function Nav() {
           Portfolio
         </Link>
       </li> */}
-      <li className="krub-bold portfolioDropdown nav-item dropdown nav-link-custom">
+      <li className="krub-bold nav-item dropdown nav-link-custom">
         <a
           className="nav-link dropdown-toggle nav-link-custom"
           data-bs-toggle="dropdown"
           href="/Portfolio"
-          role="button"
+          type="button"
+          aria-haspopup="true"
           aria-expanded="false"
         >
           Portfolio
