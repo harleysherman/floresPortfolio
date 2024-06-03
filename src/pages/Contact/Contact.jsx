@@ -47,7 +47,7 @@ function Contact() {
     }
     if (!checkMessage(message)) {
       setErrorMessage(
-        `Please enter a message with a range of 2 to 280 characters.`
+        `Please enter a message with a range of 5 to 280 characters.`
       );
       return;
     }
@@ -56,7 +56,7 @@ function Contact() {
       /* emailjs */
     }
     emailjs
-      .send("service_tech_email", "tech_portfolio_contact", name, message, {
+      .send("service_tech_email", "contact_tech_portfolio", { name, message } , {
         publicKey: "Yw36c9FjucmKNY-sc",
       })
       .then(

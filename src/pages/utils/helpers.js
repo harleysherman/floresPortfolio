@@ -6,19 +6,21 @@ export function validateEmail(email) {
 }
 
 export function checkName(input) {
-  const name = /^[a-zA-Z0-9_]\w{2,100}\s/;
+  const name = /^[a-zA-Z0-9_]\w{2,100}/;
   if (input.match(name)) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 export function checkMessage(input) {
-  const message = /^[a-zA-Z0-9_]\w{2,280}\s\t/;
+  const message = /^[a-zA-Z0-9_]\w{2,280}/;
   if (input.match(message)) {
     return true;
+  } else {
+      return false;
   }
-  return false;
 }
 
 export const QUERY_SINGLE_POST = gql`

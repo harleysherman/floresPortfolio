@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-// import Posts from "../Blog/Posts";
+// import Post from "../Blog/Posts";
 
 import { QUERY_SINGLE_POST } from "../utils/helpers";
 
@@ -17,7 +17,6 @@ import { QUERY_SINGLE_POST } from "../utils/helpers";
 //     </div>
 //   );
 // }
-
 
 const SinglePost = () => {
   const { postId } = useParams();

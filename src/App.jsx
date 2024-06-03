@@ -16,7 +16,9 @@ import { Outlet } from "react-router-dom";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
+  cache: new InMemoryCache(),
 });
+
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem("id_token");
   return {

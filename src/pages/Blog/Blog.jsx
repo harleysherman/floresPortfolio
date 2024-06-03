@@ -11,8 +11,8 @@ export default function Blog() {
 
       {Posts.map((post) => (
         <div className="m-3">
-          <Link className="post m-4" to={`/blog/${post.id}`}>
-            <h2 key={post.id}>{post.titlePost} </h2>
+          <Link className="post m-4" to={`/blog/${post.postId}`}>
+            <h2 key={post.postId}>{post.titlePost} </h2>
             <h5>{post.dateCreated}</h5>
             <p>{post.paragraph}</p>
           </Link>
