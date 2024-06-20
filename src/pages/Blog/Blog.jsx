@@ -6,7 +6,7 @@ import "../../main.css";
 
 export default function Blog() {
   return (
-    <div>
+    <>
       <h2 className="d-flex justify-content-center m-3 blog">Blog</h2>
 
       {Posts.map((post) => (
@@ -18,6 +18,6 @@ export default function Blog() {
           </Link>
         </div>
       ))}
-    </div>
+    </>
   );
 }

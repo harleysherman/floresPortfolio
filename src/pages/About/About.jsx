@@ -1,4 +1,5 @@
-import DevPhoto from "../../Assets/Sherman-Harley-SelfPortrait.jpg";import "../../main.css";
+import DevPhoto from "../../Assets/Sherman-Harley-SelfPortrait.jpg";
+import "../../main.css";
 import "./About.css";
 
 export default function About() {
