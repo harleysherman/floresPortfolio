@@ -33,8 +33,7 @@ const Post = () => {
           <h1>This Works</h1>
           <h2> {post.titlePost} </h2>
           <h1>This Works</h1>
-          <h5> {post.dateCreated} </h5>
-          <h1>This Works</h1>
+          <h2> {post.dateCreated} </h2>
           <p> {post.paragraph} </p>
       </div>
     );
