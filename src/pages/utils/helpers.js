@@ -1,3 +1,5 @@
+import { gql } from "@apollo/client";
+
 export function validateEmail(email) {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
@@ -20,4 +22,15 @@ export function checkMessage(input) {
       return false;
   }
 }
+
+export const QUERY_SINGLE_POST = gql`
+  query getSinglePost($postId: String) {
+    post(postId: $postId) {
+      postId
+      titlePost
+      paragraph
+      dateCreated
+    }
+  }
+`;
 

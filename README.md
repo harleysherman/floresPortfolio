@@ -17,7 +17,7 @@
 ## Installation
 
 1. Download repo from GitHub repository link:
-https://github.com/harleysherman/reactPortfolio. 
+https://github.com/harleysherman/floresPortfolio. 
 
 2. Install repo in terminal
 
@@ -30,7 +30,7 @@ https://github.com/harleysherman/reactPortfolio.
 ## Usage
 
 Here's the GitHub link where the repo lives:
-[portfolio](https://github.com/harleysherman/reactPortfolio)
+[portfolio](https://github.com/harleysherman/floresPortfolio)
 
 Here's the Heroku link where the repo lives:
 [heroku](https://github.com/harleysherman/noteTaker)
