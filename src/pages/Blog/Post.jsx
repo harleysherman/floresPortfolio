@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
+import Posts from "./Posts";
 import { QUERY_SINGLE_POST } from "../utils/helpers";
 
 // export default function GetPosts() {
@@ -18,12 +19,16 @@ import { QUERY_SINGLE_POST } from "../utils/helpers";
 
 const Post = () => {
   const { postId } = useParams();
+  const selectedPost = Posts[parseInt(postId) - 1];
 
-  const { loading, data } = useQuery(QUERY_SINGLE_POST, {
-    variables: { postId: postId },
+  const { loading, data, error } = useQuery(QUERY_SINGLE_POST, {
+    variables: { postId },
   });
+  if (error) {
+    console.error('Error fetching data:', error);
+  }
 
-  const post = data?.post || [];
+  const Posts = data?.posts || [];
 
   if (loading) {
     return <div>Loading...</div>;
