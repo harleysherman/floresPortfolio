@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import Posts from "./Posts";
+import { Link } from "react-router-dom";
 import { QUERY_SINGLE_POST } from "../utils/helpers";
 
 // export default function GetPosts() {
@@ -17,32 +17,38 @@ import { QUERY_SINGLE_POST } from "../utils/helpers";
 //   );
 // }
 
-const Post = () => {
-  const { postId } = useParams();
-  const selectedPost = Posts[parseInt(postId) - 1];
+export default function Post() {
+  const { id } = useParams();
+  // const selectedPost = Posts[parseInt(postId) - 1];
 
   const { loading, data, error } = useQuery(QUERY_SINGLE_POST, {
-    variables: { postId },
+    variables: { id },
   });
-  if (error) {
-    console.error('Error fetching data:', error);
-  }
 
-  const Posts = data?.posts || [];
+  const post = data?.post || [];
 
   if (loading) {
+    console.log("Loading:", loading);
     return <div>Loading...</div>;
+  } else if (error) {
+    console.error("Error fetching data:", error);
+    console.log("Error:", error);
+    console.log("Data:", data);
+    return <div>{error}</div>;
   } else {
     return (
-      <div className="m-3">
-          <h1>This Works</h1>
-          <h2> {post.titlePost} </h2>
-          <h1>This Works</h1>
-          <h2> {post.dateCreated} </h2>
-          <p> {post.paragraph} </p>
-      </div>
+      <>
+        <h2 className="d-flex justify-content-center m-3 Post">Post</h2>
+        {post.map((post) => (
+          <div className="m-3" key={post.id}>
+            <Link className="post m-4" to={`/Blog/${post.id}`}>
+              <h2>{post.title}</h2>
+              <h5>{post.dateCreated}</h5>
+              <p>{post.paragraph}</p>
+            </Link>
+          </div>
+        ))}
+      </>
     );
   }
-};
-
-export default Post;
+}

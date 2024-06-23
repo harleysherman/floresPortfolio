@@ -24,9 +24,9 @@ export function checkMessage(input) {
 }
 
 export const QUERY_SINGLE_POST = gql`
-  query getSinglePost($postId: String) {
-    post(postId: $postId) {
-      postId
+  query getSinglePost($id: String!) {
+    post(id: $id) {
+      id
       titlePost
       paragraph
       dateCreated

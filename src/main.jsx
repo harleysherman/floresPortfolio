@@ -12,7 +12,7 @@ import About from './pages/About/About.jsx';
 import Blog from './pages/Blog/Blog.jsx';
 import Resume from './pages/Resume/Resume.jsx';
 import Project from './pages/Portfolio/Project.jsx';
-import Post from './pages/Blog/Post.jsx';
+// import Post from './pages/Blog/Post.jsx';
 
 const router = createBrowserRouter([
   {
@@ -48,10 +48,10 @@ const router = createBrowserRouter([
         path: '/Blog',
         element: <Blog />,
       },
-      {
-        path: '/Blog/:id',
-        element: <Post />,
-      },
+      // {
+      //   path: '/Blog/:id',
+      //   element: <Post />,
+      // },
       // {
       //   path: "/login",
       //   element: <Login />,
